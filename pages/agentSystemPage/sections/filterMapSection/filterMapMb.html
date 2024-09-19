@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../../../global.css" />
+    <link rel="stylesheet" href="../../../root.css" />
+    <link rel="stylesheet" href="./assets/responsive.css" />
+  </head>
+  <body>
+    <section id="filtermap">
+      <div class="loading">
+        <div class="loader"></div>
+        <div class="overlay"></div>
+      </div>
+      <div class="innerFilterMap">
+        <div class="innerFilterMap-left">
+          <div class="inforHead">
+            <h2 class="titleFilterMap">Khám phá 60+ đại lý của Mộc Thanh</h2>
+            <div class="optionsMap">
+              <div class="dropdown dropdown_city">
+                <input
+                  type="checkbox"
+                  class="dropdown__switch"
+                  id="filter-switch"
+                  hidden
+                />
+                <label for="filter-switch" class="dropdown__options-filter">
+                  <ul class="dropdown__filter" role="listbox" tabindex="-1">
+                    <img
+                      src="https://mocthanh.okhub-tech.com/wp-content/uploads/2024/09/Dropdown2.png"
+                      class="bg-border"
+                    />
+                    <li class="dropdown__filter-selected" aria-selected="true">
+                      Chọn Tỉnh/Thành phố
+                    </li>
+                    <li>
+                      <ul class="dropdown__select list-dropdown_city"></ul>
+                    </li>
+                  </ul>
+                </label>
+              </div>
+              <div class="dropdown dropdown_district">
+                <input
+                  type="checkbox"
+                  class="dropdown__switch"
+                  id="filter-switch01"
+                  hidden
+                />
+                <label for="filter-switch01" class="dropdown__options-filter">
+                  <ul class="dropdown__filter" role="listbox" tabindex="-1">
+                    <img
+                      src="https://mocthanh.okhub-tech.com/wp-content/uploads/2024/09/Dropdown2.png"
+                      class="bg-border"
+                    />
+
+                    <li class="dropdown__filter-selected" aria-selected="true">
+                      Chọn Quận/Huyện
+                    </li>
+                    <li>
+                      <ul class="dropdown__select list-dropdown_district"></ul>
+                    </li>
+                  </ul>
+                </label>
+              </div>
+              <div class="resultFilter"></div>
+            </div>
+          </div>
+          <div class="inforMap">
+            <div class="quantity-agent">
+              <span class="quantilyName">Số lượng đại lý</span>
+              <p class="titleQuanlity">TIẾP TỤC TÌM KIẾM</p>
+              <div class="specialNumber">
+                <span class="number">30</span>
+                <span>+</span>
+              </div>
+            </div>
+            <div class="quantity-agent">
+              <span class="quantilyName">Số lượng tỉnh thành</span>
+              <p class="titleQuanlity">TIẾP TỤC MỞ RỘNG</p>
+              <div class="specialNumber">
+                <span class="number">80</span>
+                <span>+</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="innerFilterMap-right">
+          <div class="roundAnimation">
+            <img
+              src="https://mocthanh.okhub-tech.com/wp-content/uploads/2024/09/map1-1.png"
+              alt=""
+              style="height: 26.25rem"
+              class="mapVn"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./assets/scripts.js"></script>
+  </body>
+</html>

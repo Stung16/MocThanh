@@ -1,0 +1,253 @@
+/* foooter */
+.footer {
+  width: 95rem;
+  flex-shrink: 0;
+  position: relative;
+  margin: 0 auto;
+  border-radius: 1.25rem;
+  background: #f9f5ea;
+  padding: 4rem 4.5rem 2.12rem;
+  overflow: hidden;
+}
+.innerFooter {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 14.47rem;
+  row-gap: 2.5rem;
+}
+.footer .groupItem .logo-footer_left {
+  display: flex;
+  align-items: center;
+}
+.logo-footer_left img {
+  width: 11.746rem;
+  height: 4.064rem;
+}
+.footer .innerFooter .groupItem:nth-of-type(1) {
+  order: 1;
+}
+.footer .innerFooter .groupItem:nth-of-type(2) {
+  order: 2;
+}
+.footer .innerFooter .groupItem:nth-of-type(3) {
+  order: 3;
+}
+.footer .innerFooter .groupItem:nth-of-type(4) {
+  order: 4;
+}
+
+.footer .groupItem .slogan-footer {
+  margin-top: 2.5rem;
+  display: flex;
+  width: 28.97063rem;
+  height: 5.7025rem;
+  flex-direction: column;
+  justify-content: center;
+  color: var(
+    --text-text-body-high-emphasis-active-body-text-1,
+    rgba(48, 23, 3, 0.87)
+  );
+
+  /* WEB/Body/16/16 - R */
+  font-family: "SVN-Helvetica Now";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 1.6rem */
+  letter-spacing: -0.03125rem;
+}
+.footer .groupItem .adress-contact {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 0.5rem;
+}
+.footer .groupItem .title-item_footer {
+  color: var(--Foundation-Green-green-500, #165e4c);
+  font-family: "SVN-Helvetica Now";
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 1.625rem */
+  align-self: stretch;
+}
+.footer .groupItem .paragrap-item_footer {
+  width: 18.42606rem;
+  color: var(
+    --text-text-body-high-emphasis-active-body-text-1,
+    rgba(48, 23, 3, 0.87)
+  );
+
+  /* WEB/Body/16/16 - R */
+  font-family: "SVN-Helvetica Now";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 1.6rem */
+  letter-spacing: -0.03125rem;
+}
+.footer .groupItem .adress-contact .allBranch {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 1rem;
+  align-items: center;
+  width: fit-content;
+}
+.footer .groupItem .adress-contact .allBranch img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.footer .groupItem .adress-contact .allBranch span {
+  color: var(--text-text-body-100-tiitle, #301703);
+  display: block;
+  /* Button/14- M */
+  font-family: "SVN-Helvetica Now";
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 1.05rem */
+  letter-spacing: 0.00938rem;
+}
+
+.footer .groupItem .aboutUs {
+  width: 33.9375rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+}
+.footer .groupItem ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: stretch;
+  color: var(
+    --text-text-body-high-emphasis-active-body-text-1,
+    rgba(48, 23, 3, 0.87)
+  );
+
+  /* WEB/Body/16/16 - R */
+  font-family: "SVN-Helvetica Now";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 1.6rem */
+  letter-spacing: -0.03125rem;
+  padding: 0rem 3.8125rem 0.4375rem 0rem;
+}
+.footer .groupItem ul {
+  margin-top: 1rem;
+}
+.footer .groupItem .contactUs {
+  width: 33.9375rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+}
+.footer .bg-footer {
+  position: absolute;
+  width: 50.35906rem;
+  background-size: cover;
+  flex-shrink: 0;
+  right: 0;
+  bottom: 0;
+}
+.footer .company {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+.footer .company span {
+  color: #c2c2c2;
+  font-family: "SVN-Helvetica Now";
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.02625rem;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 639px) {
+  .footer {
+    width: 21.4375rem;
+    padding: 2rem 1rem;
+  }
+  .footer .company .Designed {
+    display: none;
+  }
+  .footer .innerFooter {
+    grid-template-columns: auto;
+    row-gap: 1.5rem;
+  }
+  .footer .groupItem .slogan-footer {
+    margin-top: 1rem;
+    width: calc(21.4375rem - 2rem);
+    height: auto;
+    text-align: justify;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 1.4rem */
+  }
+  .footer .innerFooter .groupItem:nth-of-type(1) {
+    order: 1;
+  }
+  .footer .innerFooter .groupItem:nth-of-type(2) {
+    order: 3;
+  }
+  .footer .innerFooter .groupItem:nth-of-type(3) {
+    order: 2;
+  }
+  .footer .innerFooter .groupItem:nth-of-type(4) {
+    order: 4;
+  }
+  .footer .innerFooter .groupItem .aboutUs {
+    grid-template-columns: auto;
+    row-gap: 1.5rem;
+  }
+  .footer .innerFooter .groupItem .contactUs {
+    grid-template-columns: auto;
+    row-gap: 1.5rem;
+  }
+  .footer .bg-footer {
+    left: -50%;
+    bottom: 15%;
+  }
+  .footer .groupItem ul {
+    margin-top: 0.75rem;
+  }
+  .footer .groupItem ul li {
+    font-size: 0.875rem;
+    line-height: 160%; /* 1.4rem */
+    padding: 0;
+  }
+  .footer .groupItem .title-item_footer {
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.00938rem;
+  }
+  .footer .groupItem .paragrap-item_footer {
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 1.4rem */
+  }
+  .footer .groupItem .adress-contact .allBranch span {
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 1.05rem */
+    letter-spacing: 0.00938rem;
+  }
+  .footer .company span {
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1rem; /* 133.333% */
+    letter-spacing: 0.025rem;
+  }
+  .logo-footer_left img {
+    width: 8.67075rem;
+    height: 3rem;
+  }
+}

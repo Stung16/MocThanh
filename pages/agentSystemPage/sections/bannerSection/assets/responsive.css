@@ -1,0 +1,32 @@
+#banner_agency {
+  width: 23.4375rem;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+}
+#banner_agency > img {
+  object-fit: cover;
+  width: 100%;
+}
+#banner_products > .decoration_bottom {
+  width: 100%;
+}
+
+#banner_agency > .banner_content {
+  position: absolute;
+  width: 21.4375rem;
+  top: 3.75rem;
+  left: 50%;
+  z-index: 1;
+  transition: transform 1.5s;
+  transform: translateX(-50%);
+}
+#banner_agency > .banner_content h1 {
+  text-align: center;
+  /* APP/H1/BOLD */
+  font-family: Philosopher;
+  font-size: 2.125rem !important;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120% !important; /* 2.55rem */
+}

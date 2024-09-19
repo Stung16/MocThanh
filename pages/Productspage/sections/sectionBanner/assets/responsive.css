@@ -1,0 +1,37 @@
+#banner_products {
+  width: 23.4375rem;
+  position: relative;
+  margin: 0 auto;
+}
+#banner_products > .banner_content {
+  position: absolute;
+  width: 21.4375rem;
+  left: 50%;
+  z-index: 1;
+  transition: transform 1.5s;
+  transform: translateX(-50%);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  top: 7.25rem;
+}
+#banner_products > .decoration_bottom {
+  width: 100%;
+}
+#banner_products > .banner_content h1 {
+  text-align: center;
+
+  /* APP/H1/BOLD */
+  font-family: Philosopher;
+  font-size: 2.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 2.55rem */
+  background: var(
+    --Text-Title-text-2,
+    linear-gradient(91deg, #515954 -6.81%, #2a603e 56.73%, #9db6a6 121.41%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

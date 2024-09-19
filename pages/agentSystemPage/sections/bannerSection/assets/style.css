@@ -1,0 +1,25 @@
+#banner_agency {
+  width: 100rem;
+  height: calc(39.625rem + 6.12rem);
+  position: relative;
+  margin: 0 auto;
+}
+#banner_agency > img {
+  object-fit: cover;
+}
+#banner_agency .decoration_bottom {
+  height: calc(39.625rem + 6.12rem);
+  width: 100%;
+}
+#banner_agency > .banner_content {
+  position: absolute;
+  width: 44.375rem;
+  top: 3.75rem;
+  left: 50%;
+  z-index: 1;
+  transition: transform 1.5s;
+  transform: translateX(-50%);
+}
+#banner_agency > .banner_content h1 {
+  text-align: center;
+}
