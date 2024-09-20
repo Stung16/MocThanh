@@ -1,15 +1,18 @@
 /* foooter */
+footer {
+  width: 100%;
+}
 .footer {
-  width: 95rem;
+  margin: 0 2.5rem;
   flex-shrink: 0;
   position: relative;
-  margin: 0 auto;
   border-radius: 1.25rem;
   background: #f9f5ea;
-  padding: 4rem 4.5rem 2.12rem;
   overflow: hidden;
+  padding: 4rem 4.5rem 2.12rem;
 }
 .innerFooter {
+  width: 95rem;
   display: grid;
   grid-template-columns: auto auto;
   column-gap: 14.47rem;

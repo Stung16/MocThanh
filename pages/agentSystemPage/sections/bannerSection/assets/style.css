@@ -1,11 +1,12 @@
 #banner_agency {
-  width: 100rem;
+  width: 100%;
   height: 53.4375rem;
   position: relative;
   margin: 0 auto;
 }
 #banner_agency > img {
   object-fit: cover;
+  background-size: cover;
 }
 #banner_agency .decoration_bottom {
   height: 53.4375rem;

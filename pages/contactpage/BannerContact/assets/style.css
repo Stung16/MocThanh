@@ -1,6 +1,6 @@
 .bannerContact {
   position: relative;
-  width: 100rem;
+  width: 100%;
   height: calc(43.625rem + 4.13rem);
   flex-shrink: 0;
   overflow: hidden;
@@ -8,7 +8,7 @@
 }
 .overlayContacttop {
   position: absolute;
-  width: 100rem;
+  width: 100%;
   top: -8.625rem;
   height: 26.125rem;
   background: linear-gradient(
@@ -65,7 +65,7 @@
 /*  */
 /* contact */
 .contact {
-  width: 100rem;
+  width: 100%;
   margin: 0 auto;
   flex-shrink: 0;
   align-self: stretch;
@@ -391,13 +391,17 @@
   /*  */
   /*  */
   /* contact */
+
   .contact {
     display: flex;
-    width: 23.375rem;
-    padding: 1rem;
+    width: 100%;
+    padding: 0;
     flex-direction: column;
     align-items: flex-start;
     border-radius: 0.75rem;
+  }
+  .contact .container {
+    width: 100%;
   }
   .contact .title-heading {
     display: none;
@@ -409,7 +413,6 @@
     transform: translateY(-7.12rem);
   }
   .contact .innerContact .formContact {
-    padding: 0;
     width: 21.375rem;
     padding: 1rem;
     row-gap: 1rem;

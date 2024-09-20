@@ -10,13 +10,14 @@
   width: 22.5rem !important;
 }
 #section_filter {
-  width: 100rem;
+  width: 100%;
   margin: 0 auto;
   background: #f9f5ea;
   height: auto;
 }
 .inner-section_filter {
   width: 75rem;
+  max-width: 75rem;
   margin: 0 auto;
   position: relative;
 }

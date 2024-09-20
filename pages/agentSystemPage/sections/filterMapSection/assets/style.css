@@ -5,14 +5,15 @@
 }
 #filtermap > .innerFilterMap {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: repeat(2, 1fr);
   padding-top: 5.56rem;
+  margin: 0 auto;
+  max-width: 75rem;
 }
 .innerFilterMap > .innerFilterMap-left {
   display: flex;
   flex-direction: column;
   width: 34.8125rem;
-  margin-left: 11.56rem;
 }
 .innerFilterMap > .innerFilterMap-left .titleFilterMap {
   /* WEB/Title/H2-64 */

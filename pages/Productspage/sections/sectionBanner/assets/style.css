@@ -1,10 +1,12 @@
 #banner_products {
-  width: 100rem;
+  width: 100%;
   position: relative;
   margin: 0 auto;
 }
 #banner_products > img {
+  width: 100%;
   object-fit: cover;
+  background-size: cover;
 }
 #banner_products .decoration_bottom {
   height: calc(43.75rem + 8.62rem);
