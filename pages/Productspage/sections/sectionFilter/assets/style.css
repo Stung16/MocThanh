@@ -767,4 +767,10 @@
   .product_ListItem-sell::-webkit-scrollbar {
     display: none;
   }
+  #section_filter .bgOverkay {
+    display: none !important;
+  }
+  #section_filter .imgclouduy {
+    display: none !important;
+  }
 }
