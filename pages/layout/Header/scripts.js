@@ -23,6 +23,6 @@ const closeMenuMb = () => {
   }
 };
 
-btn_TonggleMenu.addEventListener("click", tonggleShowMenu);
-overlay.addEventListener("click", closeMenuMb);
-btn_close_menumb.addEventListener("click", closeMenuMb);
+btn_TonggleMenu?.addEventListener("click", tonggleShowMenu);
+overlay?.addEventListener("click", closeMenuMb);
+btn_close_menumb?.addEventListener("click", closeMenuMb);
