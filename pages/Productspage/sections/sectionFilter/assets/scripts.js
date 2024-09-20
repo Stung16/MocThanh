@@ -56,7 +56,7 @@ const handleRenderProduct = function (data, title) {
             ${data?.products
               ?.map(function (product) {
                 return `<div class="productItem">
-                <img src="./assets/images/product1.png" alt="" />
+                <img src="https://mocthanh.okhub-tech.com/wp-content/uploads/2024/09/product1.png" alt="" />
                 <div class="productItem-infor">
                   <span>${product?.primary_category?.name}</span>
                   <p>${product?.title}</p>
@@ -97,7 +97,7 @@ const handleRenderProduct = function (data, title) {
                       </linearGradient>
                     </defs>
                   </svg>
-                  <img class="arrowL" src="./assets/images/arow.svg" alt="" />
+                  <img class="arrowL" src="https://mocthanh.okhub-tech.com/wp-content/uploads/2024/09/Container-1.png" alt="" />
                 </div>
                 <div class="btn-item_next nextBtn ${
                   +data?.current_page + 1 <= +data?.total_pages
@@ -134,7 +134,7 @@ const handleRenderProduct = function (data, title) {
                   </svg>
                   <img
                     class="arrowR"
-                    src="./assets/images/arow.svg"
+                    src="https://mocthanh.okhub-tech.com/wp-content/uploads/2024/09/Container-1.png"
                     style="rotate: 180deg"
                     alt=""
                   />

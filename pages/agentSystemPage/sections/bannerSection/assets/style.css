@@ -1,6 +1,6 @@
 #banner_agency {
   width: 100rem;
-  height: calc(39.625rem + 6.12rem);
+  height: 53.4375rem;
   position: relative;
   margin: 0 auto;
 }
@@ -8,13 +8,13 @@
   object-fit: cover;
 }
 #banner_agency .decoration_bottom {
-  height: calc(39.625rem + 6.12rem);
+  height: 53.4375rem;
   width: 100%;
 }
 #banner_agency > .banner_content {
   position: absolute;
   width: 44.375rem;
-  top: 3.75rem;
+  top: 9.31rem;
   left: 50%;
   z-index: 1;
   transition: transform 1.5s;

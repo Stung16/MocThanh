@@ -335,8 +335,8 @@
 .btn-item_prev,
 .btn-item_next {
   position: relative;
-  width: 3.25rem;
-  height: 3.25rem;
+  width: 2rem;
+  height: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -350,8 +350,8 @@
 }
 .circle {
   position: absolute;
-  width: 3.25rem;
-  height: 3.25rem;
+  width: 2rem;
+  height: 2rem;
   stroke-width: 1px;
   stroke: var(--Background-Green-Yellow, #32890e);
   border-radius: 99px;

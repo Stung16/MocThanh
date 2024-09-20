@@ -6,43 +6,6 @@
   overflow: hidden;
   margin: auto;
 }
-.banner-cloudy {
-  position: absolute;
-  width: 122.875rem;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 73.227rem;
-  flex-shrink: 0;
-  background: linear-gradient(
-      125deg,
-      #fff 10.74%,
-      rgba(255, 255, 255, 0) 44.85%
-    ),
-    lightgray 50% / cover no-repeat;
-}
-.banner-mountain {
-  position: absolute;
-  bottom: 0;
-  width: 103.02694rem;
-  height: 52.24919rem;
-  flex-shrink: 0;
-  background-repeat: no-repeat;
-}
-.overlayContactbot {
-  position: absolute;
-  bottom: 0;
-  width: 100rem;
-  height: 39.625rem;
-  background: linear-gradient(
-    180deg,
-    rgba(249, 245, 234, 0) 66.07%,
-    rgba(249, 245, 234, 0.7) 76.17%,
-    rgba(249, 245, 234, 0.86) 80.46%,
-    rgba(249, 245, 234, 0.94) 85.82%,
-    #f9f5ea 93.78%
-  );
-}
 .overlayContacttop {
   position: absolute;
   width: 100rem;
@@ -74,7 +37,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   position: absolute;
-  top: 8.66rem;
+  top: 14.1rem;
   left: 28.72rem;
 }
 .bannerContact .bird1,
@@ -82,7 +45,7 @@
   position: absolute;
 }
 .bannerContact .bird1 {
-  top: 4.19rem;
+  top: 9.69rem;
   width: 4.31244rem;
   height: 1.80913rem;
   flex-shrink: 0;
@@ -93,7 +56,7 @@
   height: 8.625rem;
   flex-shrink: 0;
   right: 8.44rem;
-  top: 10.37rem;
+  top: 15.88rem;
 }
 
 /*  */
@@ -233,7 +196,6 @@
   width: 100%;
   display: flex;
   padding: 1.25rem;
-  padding-top: 0.8rem;
   border: none;
   align-items: center;
 
@@ -381,20 +343,27 @@
   width: 2rem;
   height: 2rem;
 }
+.imgbannercontact {
+  width: 100%;
+  background-size: cover;
+  height: 49.25rem;
+}
 @media screen and (max-width: 639px) {
+  .imgbannercontact {
+    width: 23.4375rem;
+    /* background-size: contain; */
+    object-fit: fill;
+    height: calc(16.75rem + 6rem);
+  }
   .bannerContact {
     width: 23.4375rem;
     height: calc(16.75rem + 6rem);
-  }
-  .bannerContact .banner-mountain {
-    width: 36rem;
-    background-size: cover;
   }
   .bannerContact .bird1 {
     display: none;
   }
   .bannerContact .titleHeading-contact {
-    top: 2.5rem;
+    top: 6.25rem;
     width: 21.4375rem;
     text-align: center;
     left: 1rem;
@@ -410,25 +379,12 @@
     width: 66rem;
     height: 17.875rem;
   }
-  .banner-mountain {
-    width: 47.00531rem;
-    height: 23.83838rem;
-  }
-  .overlayContactbot {
-    width: 42rem;
-    height: 16.75rem;
-    flex-shrink: 0;
-  }
-  .bannerContact .banner-cloudy {
-    width: 81.1875rem;
-    height: 48.375rem;
-    flex-shrink: 0;
-  }
+
   .bannerContact .bird2 {
     width: 3rem;
     height: var(--60, 3.75rem);
     flex-shrink: 0;
-    top: 7.06rem;
+    top: 10.81rem;
     right: 3.19rem;
   }
   /*  */

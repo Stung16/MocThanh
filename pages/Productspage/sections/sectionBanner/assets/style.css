@@ -1,6 +1,5 @@
 #banner_products {
   width: 100rem;
-  height: calc(39.625rem + 6.12rem);
   position: relative;
   margin: 0 auto;
 }
@@ -8,13 +7,13 @@
   object-fit: cover;
 }
 #banner_products .decoration_bottom {
-  height: calc(39.625rem + 6.12rem);
+  height: calc(43.75rem + 8.62rem);
   width: 100%;
 }
 #banner_products > .banner_content {
   position: absolute;
   width: 44.375rem;
-  top: 9.88rem;
+  top: 15rem;
   left: 12.5rem;
   z-index: 1;
   transition: transform 1.5s;

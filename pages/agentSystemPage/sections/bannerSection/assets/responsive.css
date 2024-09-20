@@ -5,17 +5,17 @@
   overflow: hidden;
 }
 #banner_agency > img {
-  object-fit: cover;
+  object-fit: fill;
   width: 100%;
+  height: 33.75rem;
 }
 #banner_products > .decoration_bottom {
   width: 100%;
 }
-
 #banner_agency > .banner_content {
   position: absolute;
   width: 21.4375rem;
-  top: 3.75rem;
+  top: 6.25rem;
   left: 50%;
   z-index: 1;
   transition: transform 1.5s;
