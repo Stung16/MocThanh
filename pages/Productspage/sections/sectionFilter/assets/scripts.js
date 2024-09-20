@@ -1,10 +1,6 @@
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
-function isIOS() {
-  const userAgent = navigator.userAgent;
-  return /iPhone|iPad|iPod/i.test(userAgent);
-}
 // khai bao
 const btn_TonggleFilter = $(".tonggle-filter");
 const overlayFilter = $(".overlayFilter");
@@ -142,10 +138,9 @@ const handleRenderProduct = function (data, title) {
               </div>
           </div>`;
   listCategoryProduct.innerHTML = html;
-  if (!isIOS())
-    AOS.init({
-      disable: "mobile",
-    });
+  AOS.init({
+    disable: "mobile",
+  });
 };
 // fnc getDataformApi
 const getProduct = async function (slug, orderSlug, orderBySlug, pageSlug) {
@@ -197,6 +192,9 @@ const handleGetProductBySlug = async function (
 
 product_Items.forEach(function (item) {
   item.addEventListener("click", function () {
+    if (item.dataset.slug === "tat-ca") {
+      return window.location.reload();
+    }
     product_Items.forEach((link) => link.classList.remove("active"));
     this.classList.add("active");
     localStorage.setItem(
@@ -252,9 +250,12 @@ const tonggleShowListOptins = (e) => {
     const options = $$(".listOptionFilter li");
     options.forEach(function (option) {
       option.addEventListener("click", (e) => {
+        const productType = JSON.parse(localStorage.getItem("ProductType"));
+        if (!productType) {
+          return window.location.reload();
+        }
         e.stopPropagation();
         labelOptionFilter.innerText = option.innerText.trim();
-        const productType = JSON.parse(localStorage.getItem("ProductType"));
         handleGetProductBySlug(
           productType?.[0],
           productType?.[1],
@@ -272,8 +273,11 @@ const tonggleShowListOptins = (e) => {
 btnOptionFilter?.addEventListener("click", tonggleShowListOptins);
 document.addEventListener("click", closeOptionFiter);
 listfilterChoosemb?.forEach(function (option) {
-  option.addEventListener("change", function (e) {
+  option.addEventListener("click", function (e) {
     const productType = JSON.parse(localStorage.getItem("ProductType"));
+    if (!productType) {
+      return window.location.reload();
+    }
     handleGetProductBySlug(
       productType?.[0],
       productType?.[1],
@@ -287,6 +291,10 @@ listfilterChoosemb?.forEach(function (option) {
 // ghép api
 window.addEventListener("load", function () {
   localStorage.removeItem("ProductType");
+  // localStorage.setItem(
+  //   "ProductType",
+  //   JSON.stringify([nav.innerText.trim(), nav.dataset.slug])
+  // );
 });
 const swiper = new Swiper(".swiper", {
   // Optional parameters

@@ -15,7 +15,7 @@
   </head>
   <body>
     <section id="section_filter">
-      <img
+      <!-- <img
         class="imgclouduy"
         src="https://mocthanh.okhub-tech.com/wp-content/uploads/2024/09/cloudy.png"
         alt=""
@@ -24,7 +24,7 @@
         src="https://mocthanh.okhub-tech.com/wp-content/uploads/2024/09/laop-5-1.png"
         alt=""
         class="bgOverkay"
-      />
+      /> -->
       <div class="inner-section_filter">
         <!-- bgCloudy -->
 
@@ -38,6 +38,12 @@
             <li data-slug="hang-nhap-khau" class="product_Item-sell">
               Hàng nhập khẩu
             </li>
+            <div class="ovelayNav"></div>
+            <img
+              src="https://mocthanh.okhub-tech.com/wp-content/uploads/2024/09/filter.png"
+              alt=""
+              class="tonggle-filter"
+            />
           </ul>
           <div class="filterByOption">
             <span>Sắp xếp theo</span>
@@ -338,6 +344,77 @@
                 alt=""
               />
             </a>
+          </div>
+        </div>
+        <div class="overlayFilter"></div>
+        <div class="filter-cotent">
+          <div class="inner-filter-content">
+            <div class="filter-content_head">
+              <div class="filter-content_title">
+                <span>Sắp xếp theo</span>
+                <img
+                  src="https://mocthanh.okhub-tech.com/wp-content/uploads/2024/09/close-line.png"
+                  class="btn_close_menuFilter"
+                  alt=""
+                />
+              </div>
+              <ul class="listfilterChoose">
+                <li>
+                  <input
+                    type="radio"
+                    class="optionFilterMb"
+                    value="DESC"
+                    data-type="date"
+                    hidden
+                    name="name"
+                    id="1"
+                  />
+
+                  <div class="customRadio"></div>
+                  <label for="1">Mới nhất</label>
+                </li>
+                <li>
+                  <input
+                    type="radio"
+                    class="optionFilterMb"
+                    value="ASC"
+                    data-type="date"
+                    hidden
+                    name="name"
+                    id="2"
+                  />
+                  <div class="customRadio"></div>
+                  <label for="2">Cũ nhất</label>
+                </li>
+                <li>
+                  <input
+                    type="radio"
+                    class="optionFilterMb"
+                    value="ASC"
+                    data-type="title"
+                    hidden
+                    name="name"
+                    id="3"
+                  />
+                  <div class="customRadio"></div>
+                  <label for="3">Tên từ A-Z</label>
+                </li>
+                <li>
+                  <input
+                    type="radio"
+                    class="optionFilterMb"
+                    value="DESC"
+                    data-type="title"
+                    hidden
+                    name="name"
+                    id="4"
+                  />
+                  <div class="customRadio"></div>
+                  <label for="4">Tên từ Z-A</label>
+                </li>
+              </ul>
+            </div>
+            <div class="filter-content_bottom"></div>
           </div>
         </div>
       </div>
