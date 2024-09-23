@@ -129,6 +129,8 @@
     font-weight: 400;
     line-height: 160%; /* 1.4rem */
   }
+  .inner-productQuality .sub-title_qualitySmall:nth-of-type() {
+  }
   .inner-productQuality .list_icon-product {
     margin-top: 1.81rem;
     column-gap: 1rem;
